@@ -1,30 +1,49 @@
 <template>
   <div class="header">
     <nuxt-link class="header__logo" to="/">TestList</nuxt-link>
-    <nuxt-link class="header__cart" to="/cart"></nuxt-link>
-    <!-- <img scr="/cart.svg" alt="" class="header__cart" /> -->
+    <nuxt-link 
+      class="header__cart-link"
+      to="/cart"
+      @click.native="$emit('is-open-cart', true)"
+    ></nuxt-link>
   </div>
 </template>
 
+<script>
+export default {
+  // props: {
+  //   opencart: Boolean,
+  // },
+  // data() {
+  //   return {
+  //     cartOpen: this.opencart,
+  //   }
+  // },
+}
+</script>
+
 <style scoped>
 .header {
-  /* position: relative; */
-  /* display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-between  ; */
+  justify-content: space-between;
   width: 100%;
   height: 66px;
   background-color: white;
 }
 .header__logo {
-  /* position: absolute; */
-  /* top: 36%; */
+  margin-top: 20px;
   font-size: 22px;
   text-decoration: none;
   color: #1f1f1f;
   margin-left: 88px;
 }
-.header__cart {
-  background-image: url(/cart.svg);
+.header__cart-link {
+  background-image: url('/cart.svg');
+  width: 32px;
+  height: 32px;
+  margin-right: 97px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
 }
 </style>

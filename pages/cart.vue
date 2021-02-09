@@ -1,3 +1,14 @@
 <template>
-  <h2>CART</h2>
+  <div>
+    <Cart />
+  </div>
 </template>
+
+<script>
+import Cart from '@/components/Cart'
+export default {
+  components: {
+    Cart,
+  },
+}
+</script>

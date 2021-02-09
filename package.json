@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "jquery": "^3.5.1",
+    "nuxt": "^2.14.12",
+    "vue-jquery-mask": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^5.0.0",

@@ -1,3 +1,3 @@
 <template>
-  <h1>T-shirts</h1>
+  <h1>Shirts</h1>
 </template>

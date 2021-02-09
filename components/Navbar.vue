@@ -6,7 +6,7 @@
         <nuxt-link
           active-class="navbar__link_active"
           class="navbar__link"
-          to="/bagpacks"
+          to="/backpacks"
         >
           Рюкзаки
         </nuxt-link>
@@ -36,6 +36,7 @@
 <style scoped>
 .navbar {
   margin-left: 88px;
+  width: 156px;
 }
 .navbar__items {
   margin-top: 24px;
