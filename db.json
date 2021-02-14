@@ -1,0 +1,253 @@
+{
+  "backpacks": [
+    {
+      "id": 1,
+      "title": "Рюкзак Louis Vuitton Discovery",
+      "image": "/bag.jpg",
+      "rate": 3.5,
+      "price": 100000
+    },
+    {
+      "id": 2,
+      "title": "Рюкзак Louis Vuitton Adventury",
+      "image": "/bag.jpg",
+      "rate": 4.6,
+      "price": 130000
+    },
+    {
+      "id": 3,
+      "title": "Рюкзак Louis Vuitton Country",
+      "image": "/bag.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 4,
+      "title": "Рюкзак Louis Vuitton Main",
+      "image": "/bag.jpg",
+      "rate": 4.4,
+      "price": 140000
+    },
+    {
+      "id": 5,
+      "title": "Рюкзак Louis Vuitton Wow",
+      "image": "/bag.jpg",
+      "rate": 5.0,
+      "price": 200000
+    },
+    {
+      "id": 6,
+      "title": "Рюкзак Louis Vuitton Awesome",
+      "image": "/bag.jpg",
+      "rate": 5.0,
+      "price": 150000
+    },
+    {
+      "id": 7,
+      "title": "Рюкзак Louis Vuitton Plain",
+      "image": "/bag.jpg",
+      "rate": 4.2,
+      "price": 117000
+    },
+    {
+      "id": 8,
+      "title": "Рюкзак Louis Vuitton Disco",
+      "image": "/bag.jpg",
+      "rate": 4.7,
+      "price": 190000
+    },
+    {
+      "id": 9,
+      "title": "Рюкзак Louis Vuitton Over",
+      "image": "/bag.jpg",
+      "rate": 4.1,
+      "price": 155000
+    },
+    {
+      "id": 10,
+      "title": "Рюкзак Louis Vuitton Star",
+      "image": "/bag.jpg",
+      "rate": 4.0,
+      "price": 157000
+    },
+    {
+      "id": 11,
+      "title": "Рюкзак Louis Vuitton Dance",
+      "image": "/bag.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 12,
+      "title": "Рюкзак Louis Vuitton Small",
+      "image": "/bag.jpg",
+      "rate": 4.9,
+      "price": 39000
+    }
+  ],
+  "shirts": [
+    {
+      "id": 1,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 2,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 3,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 4,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 5,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 6,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 7,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 8,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 9,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 10,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 11,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 12,
+      "title": "Рубашка в клетку",
+      "image": "/shirt2.jpg",
+      "rate": 4.5,
+      "price": 150000
+    }
+  ],
+  "tshirts": [
+    {
+      "id": 1,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 2,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 3,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 4,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 5,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 6,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 7,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 8,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 9,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 10,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    },
+    {
+      "id": 11,
+      "title": "Футболка",
+      "image": "/tshirt.jpg",
+      "rate": 4.5,
+      "price": 150000
+    }
+  ]
+}

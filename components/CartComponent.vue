@@ -1,20 +1,34 @@
 <template>
-  <div class="product-card">
-    <img class="product-card__image" src="/bag.jpg" alt="" />
+  <div :key="product.id" class="product-card">
+    <img class="product-card__image" :src="product.image" alt="" />
     <div class="product-card__info-box">
-      <p class="product-card__title">Рюкзак Louis Vuitton Discovery</p>
+      <p class="product-card__title">{{ product.title }}</p>
       <p class="product-card__price">
-        150000
+        {{ product.price }}
         <span class="product-card__price-logo">₽</span>
       </p>
       <div class="product-card__popular-box">
         <img class="product-card__popular" src="/popular.svg" alt="" />
-        <span class="product-card__rate">4.5</span>
+        <span class="product-card__rate">{{ product.rate }}</span>
       </div>
     </div>
-    <div class="product-card__trash" />
+    <div
+      class="product-card__trash"
+      @click="$emit('remove-from-cart', product)"
+    />
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    product: {
+      type: Object,
+      required: true,
+    },
+  },
+}
+</script>
 
 <style scoped>
 .product-card {

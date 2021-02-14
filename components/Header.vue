@@ -1,24 +1,12 @@
 <template>
   <div class="header">
     <nuxt-link class="header__logo" to="/">TestList</nuxt-link>
-    <nuxt-link 
-      class="header__cart-link"
-      to="/cart"
-      @click.native="$emit('is-open-cart', true)"
-    ></nuxt-link>
+    <div class="header__cart-link" @click="$emit('is-open-cart', true)"></div>
   </div>
 </template>
 
 <script>
 export default {
-  // props: {
-  //   opencart: Boolean,
-  // },
-  // data() {
-  //   return {
-  //     cartOpen: this.opencart,
-  //   }
-  // },
 }
 </script>
 
@@ -42,8 +30,9 @@ export default {
   background-image: url('/cart.svg');
   width: 32px;
   height: 32px;
-  margin-right: 97px;
+  margin-right: 40px;
   margin-top: 20px;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 </style>

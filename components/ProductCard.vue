@@ -1,16 +1,32 @@
 <template>
-  <div class="product-card">
-    <img class="product-card__image" src="/bag.jpg" alt="" />
+  <div :key="product.id" class="product-card">
+    <img class="product-card__image" :src="product.image" alt="" />
     <img class="product-card__popular" src="/popular.svg" alt="" />
-    <span class="product-card__rate">4.5</span>
-    <img class="product-card__cart" src="/card_cart.svg" alt="" />
-    <p class="product-card__title">Рюкзак Louis Vuitton Discovery</p>
+    <span class="product-card__rate">{{ product.rate }}</span>
+    <img
+      class="product-card__cart"
+      src="/card_cart.svg"
+      alt=""
+      @click="$emit('add-to-cart', product)"
+    />
+    <p class="product-card__title">{{ product.title }}</p>
     <p class="product-card__price">
-      150000
+      {{ product.price }}
       <span class="product-card__price-logo">₽</span>
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    product: {
+      type: Object,
+      required: true,
+    },
+  },
+}
+</script>
 
 <style scoped>
 .product-card {
@@ -36,6 +52,7 @@
   font-weight: 700;
 }
 .product-card__cart {
+  cursor: pointer;
   position: absolute;
   right: 10%;
   top: 10%;
@@ -43,6 +60,9 @@
 .product-card__image {
   margin-top: 18px;
   margin-bottom: 16px;
+  width: 143px;
+  height: 180px;
+  object-fit: cover;
 }
 .product-card__title {
   color: #59606d;

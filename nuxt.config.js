@@ -1,4 +1,4 @@
-import webpack from 'webpack'
+// import webpack from 'webpack'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -19,6 +19,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
+  server: {
+    port: 8000,
+  },
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -34,12 +37,25 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    plugins: [
-      new webpack.ProvidePlugin({
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery',
-        $: 'jquery',
-      }),
-    ],
+    // plugins: [
+    //   new webpack.ProvidePlugin({
+    //     jQuery: 'jquery',
+    //     'window.jQuery': 'jquery',
+    //     $: 'jquery',
+    //   }),
+    // ],
+    // extend(config, ctx) {
+    //   if (ctx.isDev && ctx.isClient) {
+    //     config.module.rules.push({
+    //       enforce: 'pre',
+    //       test: /\.(js|vue)$/,
+    //       loader: 'eslint-loader',
+    //       exclude: /(node_modules)/,
+    //       options: {
+    //         fix: true,
+    //       },
+    //     })
+    //   }
+    // },
   },
 }
