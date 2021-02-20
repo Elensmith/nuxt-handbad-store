@@ -57,6 +57,9 @@ export default {
   right: 10%;
   top: 10%;
 }
+.product-card__cart:active {
+  border: 1px solid grey;
+}
 .product-card__image {
   margin-top: 18px;
   margin-bottom: 16px;

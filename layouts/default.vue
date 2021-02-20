@@ -49,4 +49,9 @@ export default {
 .component-fade-leave-to {
   opacity: 0;
 }
+@media screen and (max-width: 506px) {
+  .main {
+    flex-direction: column;
+  }
+}
 </style>

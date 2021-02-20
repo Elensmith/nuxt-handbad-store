@@ -6,23 +6,39 @@
       <span v-if="cart.length === 0" class="cart__span">
         Пока что вы ничего не добавили в корзину.
       </span>
-      <!-- <nuxt-link to="./"> -->
       <img
         src="/close.svg"
         alt=""
         class="card__close"
         @click="$emit('is-open-cart', false)"
       />
-      <!-- @click="$emit('is-open-cart', false, $router.go(-1))" -->
-      <!-- </nuxt-link> -->
       <div v-for="(item, i) in cart" :key="i" class="cart__product-container">
         <CartComponent :product="item" @remove-from-cart="removeFromCart(i)" />
       </div>
-      <form v-if="cart.length > 0" class="form">
+      <form v-if="cart.length > 0" class="form" @submit="formSubmitted">
         <p class="form__title">Оформить заказ</p>
-        <input class="form__phone" type="text" placeholder="Ваше имя" />
-        <input type="text" placeholder="Телефон" />
-        <input type="text" placeholder="Адрес" />
+        <input
+          class="form__input"
+          type="text"
+          placeholder="Ваше имя"
+          pattern="([A-ЯË][а-яё]+)(-[А-ЯË][а-яё]+)?"
+          required
+        />
+        <input
+          v-model="inputPhoneModel"
+          v-mask="'+7 (###) ###-##-##'"
+          type="text"
+          placeholder="Телефон"
+          class="form__input"
+          required
+        />
+        <input
+          class="form__input"
+          type="text"
+          placeholder="Адрес"
+          pattern="[А-Яа-я0-9.,\/\s]{10,50}"
+          required
+        />
         <button class="form__button" type="submit">Отправить</button>
       </form>
       <button
@@ -50,6 +66,7 @@ export default {
   data() {
     return {
       cartOpen: this.opencart,
+      inputPhoneModel: '',
     }
   },
   computed: {
@@ -58,8 +75,10 @@ export default {
   methods: {
     ...mapActions(['removeItemFromState']),
     removeFromCart(i) {
-      console.log(i)
       this.removeItemFromState(i)
+    },
+    formSubmitted() {
+      alert('Спасибо за заказ')
     },
   },
 }
@@ -75,15 +94,12 @@ export default {
   display: flex;
   justify-content: flex-end;
   right: 0;
-  /* text-align: center; */
 }
 .cart__title {
-  /* text-align: start; */
   font-size: 32px;
   margin: 20px 0 24px 48px;
 }
 .cart__span {
-  /* text-align: start; */
   margin-left: 48px;
   color: #59606d;
 }
@@ -97,8 +113,9 @@ export default {
 }
 .cart__container {
   width: 460px;
-  height: 100%;
+  height: fit-content;
   background-color: white;
+  border-bottom: 1px solid grey;
 }
 .cart__product-container {
   margin-top: 16px;
@@ -121,7 +138,6 @@ input {
   outline: none;
 }
 input::placeholder {
-  /* padding-left: 14px; */
   color: #959dad;
 }
 .form {
@@ -135,7 +151,7 @@ input::placeholder {
   border: none;
   color: white;
   cursor: pointer;
-  margin: 24px auto 210px auto;
+  margin: 24px auto 40px auto;
 }
 .cart__button {
   width: 364px;
@@ -145,10 +161,27 @@ input::placeholder {
   border-radius: 8px;
   border: none;
   color: white;
-  margin: 24px auto 210px 48px;
+  margin: 24px auto 40px 48px;
 }
 .form__button:hover,
 .cart__button:hover {
   background-color: #59606d;
+}
+@media screen and (max-width: 450px) {
+  .form__button,
+  .cart__button {
+    width: 200px;
+    margin: 24px auto 40px auto;
+  }
+  .cart__container {
+    text-align: center;
+  }
+  .cart__title,
+  .cart__span {
+    margin: 20px 0 24px 0;
+  }
+  input {
+    width: 300px;
+  }
 }
 </style>

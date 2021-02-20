@@ -1,4 +1,12 @@
-# nuxt-handbag-shop
+# магазин (проба nuxt, vuex, json-server)
+
+### Функционал:
+
+- каталог (3 страницы)
+- добавить/удалить товар в корзину
+- сортировка по цене/рейтингу
+- запрос к json-server (npm run json)
+- форма заявки с простой валидацией
 
 ## Build Setup
 
@@ -6,7 +14,10 @@
 # install dependencies
 $ npm install
 
-# serve with hot reload at localhost:3000
+# install json-server at localhost:3000
+$ npm run json
+
+# serve with hot reload at localhost:8000
 $ npm run dev
 
 # build for production and launch server

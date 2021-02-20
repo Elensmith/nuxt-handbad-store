@@ -35,7 +35,6 @@
   justify-content: space-between;
   margin-top: 30px;
   border-top: 1px solid black;
-  /* border: 1px black; */
 }
 .footer__nav {
   display: flex;
@@ -44,7 +43,6 @@
   list-style-type: none;
   padding: 0;
   margin: 0 0 0 88px;
-  /* align-content: space-between; */
 }
 .footer__links {
   display: flex;
@@ -66,5 +64,21 @@
 }
 .footer__nav-link:hover {
   color: darkgray;
+}
+@media screen and (max-width: 882px) {
+  .footer__links {
+    margin-right: 30px;
+  }
+  .footer__nav {
+    margin: 0 0 0 30px;
+  }
+}
+@media screen and (max-width: 506px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer__links {
+    margin-left: 16px;
+  }
 }
 </style>

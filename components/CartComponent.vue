@@ -51,6 +51,7 @@ export default {
   width: 70.57px;
   height: 90px;
   margin-left: 25px;
+  object-fit: cover;
 }
 .product-card__title {
   color: #59606d;
@@ -90,5 +91,11 @@ export default {
   font-size: 14px;
   text-align: left;
   margin-top: 8px;
+}
+@media screen and (max-width: 450px) {
+  .product-card {
+    max-width: 320px;
+    margin: auto;
+  }
 }
 </style>

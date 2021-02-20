@@ -60,4 +60,9 @@
 .navbar__item {
   margin-bottom: 19px;
 }
+@media screen and (max-width: 882px) {
+  .navbar {
+    margin-left: 30px;
+  }
+}
 </style>

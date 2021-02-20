@@ -20,6 +20,45 @@ export const mutations = {
   deleteItemFromCart(state, item) {
     state.cart.splice(item, 1)
   },
+  sortShirts(state, sortKey) {
+    const shirts = state.shirts[0]
+    shirts.sort((a, b) => {
+      let compare = 0
+      if (a[sortKey] > b[sortKey]) {
+        compare = 1
+      } else if (b[sortKey] > a[sortKey]) {
+        compare = -1
+      }
+      return compare
+    })
+    state.shirts[0] = shirts
+  },
+  sortTshirts(state, sortKey) {
+    const tshirts = state.tshirts[0]
+    tshirts.sort((a, b) => {
+      let compare = 0
+      if (a[sortKey] > b[sortKey]) {
+        compare = 1
+      } else if (b[sortKey] > a[sortKey]) {
+        compare = -1
+      }
+      return compare
+    })
+    state.tshirts[0] = tshirts
+  },
+  sortBackpacks(state, sortKey) {
+    const backpacks = state.backpacks[0]
+    backpacks.sort((a, b) => {
+      let compare = 0
+      if (a[sortKey] > b[sortKey]) {
+        compare = 1
+      } else if (b[sortKey] > a[sortKey]) {
+        compare = -1
+      }
+      return compare
+    })
+    state.backpacks[0] = backpacks
+  },
 }
 
 export const actions = {
@@ -52,6 +91,15 @@ export const actions = {
   },
   removeItemFromState({ commit }, item) {
     commit('deleteItemFromCart', item)
+  },
+  sortBackpacksAction({ commit }, key) {
+    commit('sortBackpacks', key)
+  },
+  sortShirtsAction({ commit }, key) {
+    commit('sortShirts', key)
+  },
+  sortTshirtsAction({ commit }, key) {
+    commit('sortTshirts', key)
   },
 }
 export const getters = {
